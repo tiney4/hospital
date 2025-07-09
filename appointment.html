@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Appointment - county Hospital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Book an Appointment</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="appointmentForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>Full Name:</label><br>
+      <input type="text" name="name" required><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br>
+
+      <label>Date:</label><br>
+      <input type="date" name="date" required><br>
+
+      <label>Insurance Number:</label><br>
+      <input type="text" name="insurance_number"><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="confirmation" style="display:none;">
+      <p>Thank you! Your appointment request has been sent.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 county Hospital
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
